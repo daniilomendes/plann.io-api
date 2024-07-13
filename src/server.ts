@@ -1,11 +1,11 @@
-import fastify from "fastify";
 import cors from "@fastify/cors";
-import { createTrip } from "./routes/create-trip";
-import { confirmTrip } from "./routes/confirm-trip";
+import fastify from "fastify";
 import {
   serializerCompiler,
   validatorCompiler,
 } from "fastify-type-provider-zod";
+import { confirmTrip } from "./routes/confirm-trip";
+import { createTrip } from "./routes/create-trip";
 
 const app = fastify();
 
